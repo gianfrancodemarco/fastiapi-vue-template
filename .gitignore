@@ -59,7 +59,6 @@ frontend/coverage/
 
 # Tooling / IDE
 .idea/
-.vscode/
 
 # Dependency locks to ignore
 pnpm-lock.yaml

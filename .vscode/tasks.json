@@ -1,0 +1,39 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "frontend: dev server",
+            "type": "shell",
+            "command": "pnpm",
+            "args": [
+                "dev",
+                "--host",
+                "localhost",
+                "--port",
+                "5173"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/frontend"
+            },
+            "isBackground": true,
+            "problemMatcher": {
+                "owner": "custom",
+                "fileLocation": "absolute",
+                "pattern": [
+                    {
+                        "regexp": ".",
+                        "file": 0,
+                        "line": 0,
+                        "column": 0,
+                        "message": 0
+                    }
+                ],
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": ".*VITE v",
+                    "endsPattern": "ready in\\s+\\d+\\.?\\d*\\s*ms"
+                }
+            }
+        }
+    ]
+}
