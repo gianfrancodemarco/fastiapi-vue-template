@@ -1,0 +1,45 @@
+{
+    "name": "fastapi-vue-frontend",
+    "version": "0.1.0",
+    "private": true,
+    "type": "module",
+    "packageManager": "pnpm@9.0.0",
+    "scripts": {
+        "dev": "vite --host",
+        "build": "vue-tsc --noEmit && vite build",
+        "preview": "vite preview --host",
+        "lint": "eslint . --ext .ts,.vue",
+        "test:unit": "vitest run",
+        "test:unit:watch": "vitest",
+        "test:e2e": "playwright test"
+    },
+    "dependencies": {
+        "@tanstack/vue-query": "^5.48.0",
+        "@vueuse/core": "^11.0.0",
+        "axios": "^1.7.0",
+        "pinia": "^3.0.0",
+        "vue": "^3.5.0",
+        "vue-router": "^4.6.3",
+        "zod": "^3.23.0"
+    },
+    "devDependencies": {
+        "@playwright/test": "^1.49.0",
+        "@types/node": "^20.12.7",
+        "@unocss/preset-attributify": "^0.60.0",
+        "@unocss/preset-icons": "^0.60.0",
+        "@unocss/preset-uno": "^0.60.0",
+        "@unocss/reset": "^0.60.0",
+        "@vitejs/plugin-vue": "^5.0.0",
+        "@vue/eslint-config-prettier": "^10.0.0",
+        "@vue/eslint-config-typescript": "^13.0.0",
+        "@vue/test-utils": "^2.4.0",
+        "eslint": "^9.11.0",
+        "eslint-plugin-vue": "^9.25.0",
+        "prettier": "^3.3.0",
+        "typescript": "^5.7.0",
+        "unocss": "^0.60.0",
+        "vite": "^6.0.0",
+        "vitest": "^2.1.0",
+        "vue-tsc": "^2.0.0"
+    }
+}
